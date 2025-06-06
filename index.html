@@ -2,78 +2,79 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PepeProphet Terminal</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PepeProphet Terminal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
-    <main id="app">
-        <header>
-            <h1>PepeProphet AI Dashboard</h1>
-            <p>Right-click to access tools</p>
-        </header>
+  <main id="app">
+    <header>
+      <h1>PepeProphet AI Dashboard</h1>
+      <p>Right-click to access tools</p>
+    </header>
 
-        <section id="live-dashboard">
-            <iframe src="https://pepeprophet-ex589asfrws4dv2nv5vjqu.streamlit.app/" frameborder="0" width="100%" height="800px" style="border-radius: 10px;"></iframe>
-        </section>
+    <section id="live-dashboard">
+      <!-- Fixed iframe syntax -->
+      <iframe src="https://pepeprophet-ex589asfrws4dv2nv5vjqu.streamlit.app/" frameborder="0" width="100%" height="800px" style="border-radius: 10px;"></iframe>
+    </section>
 
-        <footer class="dark">
-            <h2>Customize Theme</h2>
-            <input type="range" id="h1" min="0" max="360" value="255">
-            <input type="range" id="h2" min="0" max="360" value="222">
-        </footer>
-    </main>
+    <footer class="dark">
+      <h2>Customize Theme</h2>
+      <input type="range" id="h1" min="0" max="360" value="255">
+      <input type="range" id="h2" min="0" max="360" value="222">
+    </footer>
+  </main>
 
-    <aside id="menu" class="open dark">
-        <span class="shine shine-top"></span>
-        <span class="shine shine-bottom"></span>
-        <span class="glow glow-top"></span>
-        <span class="glow glow-bottom"></span>
-        <span class="glow glow-bright glow-top"></span>
-        <span class="glow glow-bright glow-bottom"></span>
+  <aside id="menu" class="open dark">
+    <span class="shine shine-top"></span>
+    <span class="shine shine-bottom"></span>
+    <span class="glow glow-top"></span>
+    <span class="glow glow-bottom"></span>
+    <span class="glow glow-bright glow-top"></span>
+    <span class="glow glow-bright glow-bottom"></span>
 
-        <div class="inner">
-            <label>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                </svg>
-                <input type="text" placeholder="type a command or search">
-            </label>
+    <div class="inner">
+      <label>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
+        <input type="text" placeholder="type a command or search">
+      </label>
 
-            <section>
-                <header>Navigation</header>
-                <ul>
-                    <li><a href="analytics.html">📊 Analytics</a></li>
-                    <li class="selected"><a href="index.html">📈 Dashboard</a></li>
-                    <li><a href="logs.html">📃 Logs</a></li>
-                </ul>
-            </section>
+      <section>
+        <header>Navigation</header>
+        <ul>
+          <li><a href="analytics.html">📊 Analytics</a></li>
+          <li class="selected"><a href="index.html">📈 Dashboard</a></li>
+          <li><a href="logs.html">📃 Logs</a></li>
+        </ul>
+      </section>
 
-            <hr>
+      <hr>
 
-            <section>
-                <header>Settings</header>
-                <ul>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                        </svg>
-                        Profile
-                    </li>
-                </ul>
-            </section>
-        </div>
-    </aside>
+      <section>
+        <header>Settings</header>
+        <ul>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+            Profile
+          </li>
+        </ul>
+      </section>
+    </div>
+  </aside>
 
-    <a class="social-icon github" href="https://github.com/CavinKrenik/PepeProphet" title="GitHub">
-        GitHub
-    </a>
+  <a class="social-icon github" href="https://github.com/CavinKrenik/PepeProphet" title="GitHub">
+    GitHub
+  </a>
 
-    <script src="script.js"></script>
-    <script src="router.js" defer></script>
+  <script src="script.js"></script>
+  <script src="router.js" defer></script>
 </body>
 
 </html>
