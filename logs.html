@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PepeProphet Logs</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <main id="app">
+    <header>
+      <h1>📜 PepeProphet Log Viewer</h1>
+      <p>Right-click for more tools</p>
+    </header>
+
+    <section class="logs-display">
+      <textarea readonly style="width: 100%; height: 600px; border-radius: 12px; padding: 1em; font-family: monospace; background: rgba(0,0,0,0.4); color: #00ffcc;">
+[INFO] 2025-06-05 12:00:01 - Signal fetched for WEPE
+[BUY]  2025-06-05 12:01:22 - Confidence: 81% - Volume Spike +2.3x
+[HOLD] 2025-06-05 12:03:05 - Confidence: 54% - Sentiment Stable
+[SELL] 2025-06-05 12:06:30 - Confidence: 22% - Negative Trend
+      </textarea>
+      <br><br>
+      <a href="logs/signals_2025-06-05.csv" download class="button">⬇️ Download Today’s CSV</a>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="router.js" defer></script>
+</body>
+</html>
